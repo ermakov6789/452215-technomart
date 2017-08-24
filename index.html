@@ -14,7 +14,8 @@
                         <img src="img/index-logo.png" width="110" height="18" alt="Логотип Техномарт">
                     </a>
                     <form class="main-header-search" action="https://echo.htmlacademy.ru" method="post">
-                        <input class="search-icon" type="search" name="search" value="" placeholder="Поиск:">
+                        <label class="visually-hidden" for="header-search">Поиск</label>
+                        <input class="search-icon" type="search" name="search" value="" id="header-search" placeholder="Поиск:">
                     </form>
                     <ul class="header-top-navigation">
                         <li class="bookmarks-link"><a href="#">Закладки</a></li>
@@ -38,7 +39,7 @@
                     </ul>
                     <nav class="main-navigation">
                         <ul class="site-navigation">
-                            <li><a href="#">Главная</a></li>
+                            <li><a>Главная</a></li>
                             <li><a href="#">Компания</a></li>
                             <li><a href="catalog.html">Каталог</a></li>
                             <li><a href="#">Новости</a></li>
@@ -81,12 +82,12 @@
                                 <p>Настоящие мужские игрушки</p>
                                 <a class="button" href="#">Открыть каталог</a>
                             </figure>
-                            <span class="slider-button-back">
+                            <button class="slider-button-back" type="button">
                                 Назад
-                            </span>
-                            <span class="slider-button-next">
+                            </button>
+                            <button class="slider-button-next" type="button">
                                 Вперед
-                            </span>
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -180,9 +181,9 @@
                     <h2 class="desc-title">Сервисы</h2>
                     <p class="section-desc">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил сделать покупки приятными.</p>
                     <ul class="features-list">
-                        <li class="service-item">Доставка</li>
-                        <li class="service-item">Гарантия</li>
-                        <li class="service-item">Кредит</li>
+                        <li class="service-item"><a href="#">Доставка</a></li>
+                        <li class="service-item"><a href="#">Гарантия</a></li>
+                        <li class="service-item"><a href="#">Кредит</a></li>
                     </ul>
                     <section class="service-item delivery-service">
                         <h2 class="service-title">Доставка</h2>
@@ -217,7 +218,9 @@
                         <p class="section-desc">Вы можете забрать товар сами,<br>
                         заехав в наш офис:</p>
                         <p class="section-desc">
-                            <img src="img/map.jpg" width="300" height="158" alt="Большая Конюшенная ул., 19">
+                            <a href="map.html">
+                                <img src="img/map.jpg" width="300" height="158" alt="Большая Конюшенная ул., 19">
+                            </a>
                         </p>
                         <a class="button write-us-button" href="#">Заблудились? Напишите нам</a>
                     </section>
@@ -290,11 +293,11 @@
                 </div>
                 <button class="button" type="submit">Войти</button>
             </form>
-            <span class="modal-close">x</span>
+            <button class="modal-close" type="button">Закрыть</button>
         </section>
         <section class="modal modal-map">
             <h2 class="visually-hidden">Как до нас добраться</h2>
-            <span class="modal-close">x</span>
+            <button class="modal-close" type="button">Закрыть</button>
         </section>
     </body>
 </html>
