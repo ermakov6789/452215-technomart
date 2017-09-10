@@ -359,11 +359,11 @@
                 <div class="feedback-contacts-wrapper">
                     <div class="feedback-form-group">
                         <label for="name">Ваше имя:</label>
-                        <input class="user-name" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+                        <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
                     </div>
                     <div class="feedback-form-group">
                         <label for="email">Ваш e-mail:</label>
-                        <input class="user-email" type="email" name="email" id="email" placeholder="Для отправки ответа">
+                        <input type="email" name="email" id="email" placeholder="Для отправки ответа">
                     </div>
                 </div>
                 <div class="feedback-message-wrapper">
@@ -372,8 +372,10 @@
                         <textarea name="user-message" id="user-message" placeholder="В свободной форме"></textarea>
                     </div>
                 </div>
-                <div class="feedback-button-wrapper">
-                    <button class="button" type="submit">Отправить</button>
+                <div class="feedback-bottom">
+                    <div class="feedback-button-wrapper">
+                        <button class="button" type="submit">Отправить</button>
+                    </div>
                 </div>
             </form>
             <button class="modal-close" type="button">Закрыть</button>
@@ -381,6 +383,14 @@
         <section class="modal modal-map">
             <h2 class="visually-hidden">Как до нас добраться</h2>
             <button class="modal-close" type="button">Закрыть</button>
+        </section>
+        <section class="modal modal-cart">
+            <h2>Товар добавлен в корзину!</h2>
+            <button class="modal-close" type="button">Закрыть</button>
+            <ul class="modal-cart-list">
+                <li><a class="button" href="#">Оформить заказ</a></li>
+                <li><a class="button button-continue" href="#">Продолжить покупки</a></li>
+            </ul>
         </section>
     </body>
 </html>
