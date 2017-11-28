@@ -2063,14 +2063,27 @@ fieldset ul,
 /*-------------МОДАЛЬНЫЕ ОКНА----------*/
 
 .modal {
+    position: fixed;
+
+    display: none;
+
     box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
 }
 
+.modal-show {
+    display: block;
+}
+
 .modal-feedback {
-    position: relative;
+    top: 120px;
+    left: 50%;
 
     width: 620px;
     margin: auto;
+    margin-left: -320px;
+
+    background-color: white;
+    z-index: 100;
 }
 
 .feedback-form {
@@ -2176,11 +2189,19 @@ fieldset ul,
 
 /*--------товар в корзине-----------------*/
 .modal-cart {
-    position: relative;
+    position: fixed;
+
+    top: 120px;
+    left: 50%;
 
     width: 620px;
     margin: auto;
+    margin-left: -310px;
     border-top: 7px solid #ff5357;
+
+    background-color: #ffffff;
+
+    z-index: 1000;
 }
 
 .modal-cart h2 {
