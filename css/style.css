@@ -2189,7 +2189,6 @@ fieldset ul,
 /*--------товар в корзине-----------------*/
 .modal-cart {
     position: fixed;
-
     top: 120px;
     left: 50%;
 
